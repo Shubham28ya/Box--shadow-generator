@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div><header>
+      <a href="http://127.0.0.1:5500/index.html"><button >Box shadow</button></a>  
+
+        <a href="http://127.0.0.1:5500/index%20copy.html"><button >Boarder Radius</button></a>  
+      </header></div>
+    <div class="result">
+        <div id="element"></div>
+      </div>
+    <div class="container">     
+      <div class="sliders">
+        
+        <div class="slider-wrapper">
+          <label for="h-shadow">All Corner</label>
+          <input type="range" id="All-Corner" max="100" min="0" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="v-shadow">Top Left</label>
+          <input type="range" id="Top-Left" max="100" min="0" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="Top-Right">Top Right</label>
+          <input type="range" id="Top-Right" max="100" min="0" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="spread-radius">Bottom Right</label>
+          <input type="range" id="Bottom-Left" max="100" min="0" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="shadow-color">Bottom Left</label>
+          <input type="range" id="Bottom-Right" max="100" min="0" value="0" />
+        </div>
+        <div class="slider-wrapper">
+          <label for="shadow-color-opacity">Border Width:</label> 
+          <input type="range" id="Border_width" max="100" min="0"   value="1"/>
+        </div>
+        <div class="shadow-color">
+          <label for="shadow-color">Shadow Color:</label>
+          <input type="color" id="shadow-color" />
+        </div>
+      </div>
+      <div class="code-wrapper">
+        <textarea rows="3" id="code"></textarea>
+        <button onclick="copyCode()">Copy</button>
+      </div>
+    </div>
+    <script src="radius.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #0075ff;
+    background-image: url(img/boxshadow.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    background-color: #ffffff;
+    /* background-image: url(img/box.jpg); */
+    background: transparent;
+    padding: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 60%;
+    top: 50%;
+    width: 80vmin;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* box-shadow: 0 20px 40px rgba(2, 42, 83, 0.2); */
+    box-shadow: -1px 1px 8px 6px rgba(32,38,39,1);
+  }
+  
+  .result{
+    height: 60px;
+    width: 60px;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+  #element {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    background-color: #c6d3e2;
+    margin: auto;
+  }
+  .sliders {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 20px 15px;
+  }
+  .slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  input[type="range"] {
+    width: 100%;
+  }
+  .code-wrapper {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  textarea {
+    resize: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .code-wrapper button {
+    background-color: #0075ff;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+  }
+
+button{
+  background-color: rgb(1, 78, 52);
+  height: 50px;
+  width: 140px;
+  color: white;
+  border-radius: 10px;
+  offset: none;
+  border: 2px solid black;
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 900;
+  background: transparent;
+
+
+}
+button:hover{
+  background-color: azure;
+  color: white;
+  font-weight: 900;
+  color: black;
+}
+
+@media screen and (max-width:575px){
+  body {
+    background-color: #233850;
+    background-image: none;
+  }
+  .container{
+    margin-top: 200px;
+    margin-left: -35px;
+  }
+  .code-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  #element{
+    margin-left: 50px;
+  }
+
+}
+
+ 
